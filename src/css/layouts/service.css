@@ -1,0 +1,254 @@
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+}
+
+.service__info {
+  display: block;
+}
+
+.service__info-title {
+  /* font-style font-wieght font-size/line-hieght font-family */
+  font: normal 700 7rem/9rem var(--font-primary);
+  text-transform: capitalize;
+}
+
+.service__info-text {
+  max-width: 64rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.service__list {
+  list-style-type: none;
+}
+
+.service__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  max-width: 55rem;
+  margin-bottom: 0.3rem;
+  transition: all 0.4s;
+}
+
+.service__list-item:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+}
+
+.service__list-item--icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary-light);
+  margin-right: 2rem;
+}
+
+.service__list-item:hover .service__list-item--icon {
+  background-color: var(--color-white);
+}
+
+.service__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.service__imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 2rem;
+}
+
+.service__imgbox-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20rem;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  padding: 5rem;
+  background-color: var(--color-primary);
+}
+
+.service__imgbox-circle::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3rem;
+  transform: rotate(135deg);
+  background-color: var(--color-white);
+}
+
+.service__imgbox-circle::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3rem;
+  transform: rotate(45deg);
+  background-color: var(--color-white);
+}
+
+.service__imgbox-circle--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.service__imgbox-circle--outline {
+  position: absolute;
+  left: 55%;
+  width: 25rem;
+  height: 50rem;
+  transform: rotate(-2deg);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .service__info-title {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+  .service__info-text {
+    max-width: 50rem;
+  }
+  .service__list-item {
+    max-width: 50rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .service__imgbox {
+    width: 40%;
+  }
+  .service__imgbox-circle {
+    margin-top: 15rem;
+    width: 35rem;
+    height: 35rem;
+  }
+  .service__imgbox-circle--outline {
+    width: 22rem;
+    height: 45rem;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .service {
+    padding: 4rem 3rem;
+  }
+
+  .service__info-title {
+    max-width: 45rem;
+    font-size: 4.6rem;
+    line-height: 5rem;
+  }
+  .service__info-text {
+    max-width: 40rem;
+  }
+  .service__list-item {
+    max-width: 40rem;
+    padding: 1.5rem;
+  }
+  .service__list-item h1{
+    font-size: 2.4rem;
+  }
+  .service__list-item p{
+    font-size: 1.6rem;
+  }
+
+  .service__imgbox {
+    width: 50%;
+  }
+  .service__imgbox-circle {
+    margin-top: 10rem;
+    width: 28rem;
+    height: 28rem;
+  }
+  .service__imgbox-circle--outline {
+    width: 18rem;
+    height: 35rem;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    flex-direction: column;
+  }
+
+  .service__info-title {
+    max-width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 4rem;
+  }
+  .service__info-text {
+    max-width: 100%;
+  }
+  .service__list-item {
+    max-width: 100%;
+    padding: 1.5rem 3rem;
+  }
+  .service__list-item h1{
+    font-size: 2.8rem;
+  }
+  .service__list-item p{
+    font-size: 1.6rem;
+  }
+
+  .service__imgbox {
+    width: 100%;
+  }
+  .service__imgbox-circle {
+    margin-top: 3rem;
+    width: 28rem;
+    height: 28rem;
+  }
+  .service__imgbox-circle--outline {
+    width: 18rem;
+    height: 35rem;
+    left: 55%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .service {
+    padding: 1.5rem;
+  }
+  .service__info-text {
+    line-height: 2.4rem;
+  }
+  .service__list-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .service__list-item h1{
+    font-size: 2.2rem;
+  }
+  .service__list-item p{
+    font-size: 1.4rem;
+  }
+
+  .service__imgbox-circle {
+    margin: 2rem 0;
+    width: 22rem;
+    height: 22rem;
+    padding: 3rem;
+  }
+  .service__imgbox-circle--outline {
+    width: 14rem;
+    height: 28rem;
+    left: 50%;
+  }
+}

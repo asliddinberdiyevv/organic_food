@@ -1,0 +1,132 @@
+.footer {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8rem 10rem;
+    background-color: var(--color-primary-light);
+}
+.grid__footer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+.footer__logo:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-delay: 0.4s;
+}
+.footer__flex {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+.footer_linkirs {
+    padding: 3rem 7.3rem;
+}
+.footer_linkirs:last-child {
+    padding-right: 0;
+}
+.linkirs__header {
+    margin-bottom: 3rem;
+}
+.linkirs__item,
+.linkirs__item-flex {
+    position: relative;
+    list-style-type: none;
+    display: table;
+    margin-bottom: 2rem;
+}
+.linkirs__item:hover {
+    cursor: pointer;
+}
+.linkirs__item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 0;
+    height: 0.2rem;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+.linkirs__item:hover::after {
+    background-color: var(--color-selection-bg);
+    width: 100%;
+}
+.linkirs__item-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer__social-media {
+    margin: 0 auto;
+}
+.footer__social-media:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition-duration: 0.4s;
+}
+
+/* Responsev */
+@media screen and (max-width: 1340px) {
+    .footer_linkirs {
+        padding: 3rem 5.5rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 6rem 7rem;
+    }
+    .footer__logo {
+        margin-bottom: 1.5rem;
+    }
+    .footer_linkirs {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer {
+        padding: 4rem 2rem;
+    }
+    .grid__footer {
+        display: inline-block;
+    }
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__text {
+        text-align: center;
+    }
+    .footer__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_linkirs {
+        padding: 1rem;
+    }
+    .linkirs__header {
+        margin-bottom: 1rem;
+    }
+    .linkirs__item {
+        margin-bottom: 0.8rem;
+    }
+}
+@media screen and (max-width: 524px) {
+    .footer {
+        padding: 3rem 1rem;
+    }
+    .footer__flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .linkirs__header {
+        text-align: center;
+        width: 28rem;
+    }
+    .linkirs__item-flex {
+        margin-top: 2rem;
+    }
+}

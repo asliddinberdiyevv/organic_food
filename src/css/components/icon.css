@@ -1,0 +1,22 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-light);
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: var(--color-selection-bg);
+}
+
+@media screen and (max-width: 1000px) {
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

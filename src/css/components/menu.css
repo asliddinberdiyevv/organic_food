@@ -1,0 +1,127 @@
+#checkbox {
+  display: none;
+}
+
+.menu {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 111;
+}
+
+.menu__icon {
+  position: absolute;
+  height: 0.3rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-black);
+  transition: 0.4s ease;
+}
+
+.menu__icon::before {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-black);
+  top: -0.6rem;
+  transition: 0.4s ease;
+}
+
+.menu__icon::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-black);
+  top: 0.6rem;
+  transition: 0.4s ease;
+}
+
+.menu__layer {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  background-color: var(--color-black);
+  top: -100%;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: all .5s;
+}
+
+#checkbox:checked ~ label .menu__icon {
+  transform: rotate(405deg);
+  z-index: 25;
+  background-color: var(--color-white);
+  top: 3rem;
+  position: fixed;
+}
+
+#checkbox:checked ~ label .menu__icon::before {
+  transform: rotate(-90deg) translateX(3rem);
+  z-index: 25;
+  background-color: var(--color-white);
+  top: 3rem;
+  position: fixed;
+}
+
+#checkbox:checked ~ label .menu__icon::after {
+  display: none;
+}
+
+#checkbox:checked ~ label .menu__layer {
+    z-index: 10;
+    opacity: .9;
+    top: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .menu__layer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+  }
+  .menu__layer-links {
+    list-style-type: none;
+    color: var(--color-white);
+  }
+  .menu__layer-links--link {
+    position: relative;
+    text-transform: capitalize;
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .menu__layer-links--link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 0;
+    height: 0.4rem;
+    border-radius: 1rem;
+    transition: all 0.4s;
+  }
+  .menu__layer-links--link:hover::after {
+    background-color: var(--color-selection-bg);
+    width: 100%;
+  }
+
+  .menu__layer-links--link:hover {
+    cursor: pointer;
+  }
+}

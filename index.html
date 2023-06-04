@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Organic food</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <ul class="navigation__links">
+          <li class="navigation__links-item">about us</li>
+          <li class="navigation__links-item">service</li>
+          <li class="navigation__links-item">menu</li>
+          <li class="navigation__links-item">contact</li>
+        </ul>
+        <div class="navigation__logo">
+          <img
+            class="navigation__logo-img"
+            width="100%"
+            height="100%"
+            src="./src/images/logo.png"
+            alt="logo"
+          />
+        </div>
+        <ul class="navigation__items">
+          <li class="navigation__items-item icon">
+            <img
+              width="18px"
+              height="18px"
+              src="./src/icons/search.svg"
+              alt="search-icon"
+            />
+          </li>
+          <li class="navigation__items-item icon">
+            <img
+              width="18px"
+              height="18px"
+              src="./src/icons/buy.svg"
+              alt="card-icon"
+            />
+          </li>
+          <li class="navigation__items-item">
+            <button class="btn">regestar now</button>
+          </li>
+          <li class="navigation__items-item">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">
+              <div class="menu">
+                <div class="menu__icon"></div>
+                <!-- MOBILE LAYER MENU -->
+                <div class="menu__layer">
+                  <ul class="menu__layer-links">
+                    <li class="menu__layer-links--link">about us</li>
+                    <li class="menu__layer-links--link">service</li>
+                    <li class="menu__layer-links--link">menu</li>
+                    <li class="menu__layer-links--link">contact</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HEADER -->
+      <section id="header" class="header">
+        <h1 class="header__item">organic fruit & vegetables</h1>
+        <p class="header__describtion">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          pariatur nisi enim deserunt vel architecto odit distinctio optio
+          doloremque maiores. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Placeat!
+        </p>
+        <span id="header__btn">
+          <a href="#" class="header__btn">
+            <span class="header__btn-context">order now</span>
+            <button type="button" class="button">
+              <img
+                src="/src/icons/arrow-long.svg"
+                alt="arrow-long.svg"
+                class="button__icon"
+              />
+            </button>
+          </a>
+        </span>
+        <div class="product__information">
+          <div class="product">
+            <img
+              width="120%"
+              height="100%"
+              src="/src/images/fruits-vegetables-removebg-preview.png"
+              alt="fruits-vegetables.png"
+            />
+          </div>
+          <div class="information">
+            <ul class="infotmation__items">
+              <li class="information__item">
+                <div class="information__item-icon">
+                  <img src="/src/icons/user.svg" alt="user.svg" />
+                </div>
+                <div class="information__item-icon--discribtion">
+                  <h3>30K</h3>
+                  <p>user order</p>
+                </div>
+              </li>
+              <li class="information__item">
+                <div class="information__item-icon">
+                  <img src="/src/icons/star-full.svg" alt="start.svg" />
+                </div>
+                <div class="information__item-icon--discribtion">
+                  <h3>20K</h3>
+                  <p>reviews(4.8)</p>
+                </div>
+              </li>
+              <li class="information__item">
+                <div class="information__item-icon">
+                  <img src="/src/icons/harvest.svg" alt="harvest.svg" />
+                </div>
+                <div class="information__item-icon--discribtion">
+                  <h3>300</h3>
+                  <p>items</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE -->
+      <section id="service" class="service">
+        <div class="service__info">
+          <h1 class="service__info-title">Why We Aer The Best?</h1>
+          <p class="service__info-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley...
+          </p>
+          <ul class="service__list">
+            <li class="service__list-item">
+              <span class="service__list-item--icon">
+                <img
+                  width="24px"
+                  height="24px"
+                  src="./src/icons/delivery.svg"
+                  alt="delivery"
+                />
+              </span>
+              <span class="service__list-item--text">
+                <h1>Fasted delivery Service</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </span>
+            </li>
+            <li class="service__list-item">
+              <span class="service__list-item--icon">
+                <img
+                  width="24px"
+                  height="24px"
+                  src="./src/icons/order.svg"
+                  alt="order
+                  "
+                />
+              </span>
+              <span class="service__list-item--text">
+                <h1>Online order Service</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </span>
+            </li>
+            <li class="service__list-item">
+              <span class="service__list-item--icon">
+                <img
+                  width="24px"
+                  height="24px"
+                  src="./src/icons/timer.svg"
+                  alt="timer"
+                />
+              </span>
+              <span class="service__list-item--text">
+                <h1>24/8 Service</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="service__imgbox">
+          <div class="service__imgbox-circle">
+            <img
+              class="service__imgbox-circle--img"
+              src="./src/images/user-8.png"
+            />
+            <img
+              width="50%"
+              height="100%"
+              class="service__imgbox-circle--outline"
+              src="./src/images/ellipse.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLOR -->
+      <section id="explor" class="explor">
+        <h1 class="explore__content-title--mobile">Explor Our Special Items</h1>
+        <div class="explor__imgbox">
+          <img
+            class="explor__imgbox-img"
+            width="100%"
+            height="100%"
+            src="./src/images/vegetables.png"
+            alt="vegetables"
+          />
+        </div>
+        <div class="explor__content">
+          <h1 class="explore__content-title">Explor Our Special Items</h1>
+          <p class="explor__content-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer...
+          </p>
+          <a href="#" class="explor__content-btnbox">
+            <span class="explor__content-btnbox--text">Explor Now</span>
+            <span class="explor__content-btnbox--icon">
+              <img
+                width="100%"
+                height="100%"
+                src="./src/icons/arrow-long.svg"
+                alt="arrow-right-icon"
+              />
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="about__info">
+          <h1 class="about__info-title">What Our Customers About Us saying</h1>
+          <div class="about__imgbox mobile">
+            <img
+              class="about__imgbox-img"
+              width="100%"
+              height="100%"
+              src="./src/images/user-1.png"
+              alt="user"
+            />
+          </div>
+          <h3 class="about__info-subtitle mobile">Ahmed Hridoy</h3>
+          <p class="about__info-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularis
+          </p>
+          <h3 class="about__info-subtitle">Ahmed Hridoy</h3>
+          <div class="about__info-footer">
+            <div class="about__info-footer--grade">
+              <img
+                width="20px"
+                height="20px"
+                src="./src/icons/star-full.svg"
+                alt="star"
+              />
+              <img
+                width="20px"
+                height="20px"
+                src="./src/icons/star-full.svg"
+                alt="star"
+              />
+              <img
+                width="20px"
+                height="20px"
+                src="./src/icons/star-full.svg"
+                alt="star"
+              />
+              <img
+                width="20px"
+                height="20px"
+                src="./src/icons/star-full.svg"
+                alt="star"
+              />
+              <img
+                width="24px"
+                height="24px"
+                src="./src/icons/star.svg"
+                alt="star"
+              />
+            </div>
+            <div class="about__info-footer--icon">
+              <span class="about__icon left">
+                <img
+                  width="100%"
+                  height="100%"
+                  src="./src/icons/arrow.svg"
+                  alt="arrow"
+                />
+              </span>
+              <span class="about__icon right">
+                <img
+                  width="100%"
+                  height="100%"
+                  src="./src/icons/arrow.svg"
+                  alt="arrow"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="about__imgbox">
+          <img
+            class="about__imgbox-img"
+            width="100%"
+            height="100%"
+            src="./src/images/user-1.png"
+            alt="user"
+          />
+        </div>
+      </section>
+
+      <!-- Orders -->
+      <section id="orders" class="orders">
+        <div class="orders__flex">
+          <div class="orders__phone">
+            <div class="orders__position-phone">
+              <img src="/src/images/phone.png" alt="phone logo" />
+            </div>
+            <div class="orders__position-phone--shado">
+              <img src="/src/images/phone.png" alt="shado phone" />
+            </div>
+          </div>
+          <div class="orders__content">
+            <span class="orders__button">
+              <button class="orders__content-button">
+                <a href="#"> Download App </a>
+              </button>
+            </span>
+            <h1 class="orders__content-header">
+              Simple Way To Order Your Organic Fruit
+            </h1>
+            <div class="orders__phone-change">
+              <div class="orders__position-phone">
+                <img src="/src/images/phone.png" alt="phone logo" />
+              </div>
+              <div class="orders__position-phone--shado">
+                <img src="/src/images/phone.png" alt="shado phone" />
+              </div>
+            </div>
+            <p class="orders__content-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer...
+            </p>
+            <span class="orders__button-change--responsev">
+              <button class="orders__content-button">
+                <a href="#"> Download App </a>
+              </button>
+            </span>
+            <div class="orders__content-phone--apps">
+              <span class="orders__button-change">
+                <button class="orders__content-button">
+                  <a href="#"> Download App </a>
+                </button>
+              </span>
+              <div class="phone__app-one">
+                <img src="/src/images/app-store.png" alt="app store" />
+              </div>
+              <div class="phone__app-two">
+                <img src="/src/images/play-market.png" alt="play market" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="footer">
+        <div class="grid__footer">
+          <div class="footer__logo-text">
+            <div class="footer__logo">
+              <img src="/src/images/logo.png" alt="logo" />
+            </div>
+            <p class="footer__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer...
+            </p>
+          </div>
+          <div class="footer__flex">
+            <ul class="footer_linkirs">
+              <h3 class="linkirs__header">Navigation</h3>
+              <li class="linkirs__item">About Us</li>
+              <li class="linkirs__item">Service</li>
+              <li class="linkirs__item">Menu</li>
+            </ul>
+            <ul class="footer_linkirs">
+              <h3 class="linkirs__header">Resources</h3>
+              <li class="linkirs__item">Reviews</li>
+              <li class="linkirs__item">Blog</li>
+              <li class="linkirs__item">Update News</li>
+            </ul>
+            <ul class="footer_linkirs">
+              <h3 class="linkirs__header">Contact Us</h3>
+              <li class="linkirs__item">Email: oyasim@email.com</li>
+              <li class="linkirs__item-flex">
+                <div class="footer__social-media">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer__social-media">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__social-media">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

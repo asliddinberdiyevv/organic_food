@@ -1,0 +1,186 @@
+.orders {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10rem;
+}
+.orders__flex {
+    display: flex;
+    flex-direction: row;
+}
+.orders__phone {
+    position: relative;
+}
+.orders__position-phone--shado {
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+    z-index: -5;
+}
+.orders__position-phone--shado img {
+    height: 45rem;
+}
+.orders__content {
+    padding: 5rem 10rem;
+}
+.orders__content-button {
+    padding: 1rem 2rem;
+    background-color: var(--color-primary-light);
+    border: none;
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+}
+.orders__content-button:hover {
+    cursor: pointer;
+    background-color: var(--color-selection-bg);
+    transition-duration: 0.4s;
+}
+.orders__content-button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-black-light);
+}
+.orders__content-header {
+    font-weight: 700;
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+.orders__phone-change {
+    display: none;
+}
+.orders__content-text {
+    max-width: 60rem;
+    line-height: 2.6rem;
+    color: var(--color-black-light);
+}
+.orders__content-phone--apps {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3rem 0;
+}
+.orders__button-change {
+    display: none;
+}
+.orders__button-change--responsev {
+    display: none;
+}
+.phone__app-one {
+    background-color: var(--color-black);
+    margin-right: 2rem;
+    width: 10rem;
+    padding: 0.5rem 0rem 0rem 1rem;
+    border-radius: 0.5rem;
+}
+.phone__app-two {
+    background-color: var(--color-black);
+    width: 10rem;
+    padding: 0.5rem 0rem 0rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.phone__app-one:hover,
+.phone__app-two:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1200px) {
+    .orders {
+        padding: 8rem 10rem;
+    }
+    .orders__content {
+        padding: 2rem 9rem;
+    }
+    .orders__content-header {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .orders {
+        padding: 7rem 0 7rem 5rem;
+    }
+    .orders__content-header {
+        font-size: 3rem;
+    }
+    .orders__content-text {
+        min-width: 30rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .orders {
+        padding: 5rem 0 5rem 5rem;
+    }
+    .orders__content {
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .orders {
+        padding: 3rem 0 3rem 3rem;
+    }
+    .orders__flex {
+        display: inline-block;
+    }
+    .orders__phone {
+        display: none;
+    }
+    .orders__button {
+        display: none;
+    }
+    .orders__phone-change {
+        display: block;
+        float: left;
+        padding-right: 2rem;
+    }
+    .orders__button-change {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    .orders__position-phone img {
+        height: 20rem;
+    }
+    .orders__content {
+        padding: 1rem 2rem;
+    }
+    .orders__content-text {
+        display: block;
+    }
+    .orders__content-phone--apps {
+        float: left;
+    }
+} 
+@media screen and (max-width: 460px) {
+    .orders {
+        max-width: 100%;
+    }
+    .orders__flex {
+        width: 100%;
+    }
+    .orders__phone-change {
+        float: none;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .orders__content-text {
+        display: contents;
+    }
+    .orders__content-phone--apps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .orders__button-change {
+        display: none;
+    }
+    .orders__button-change--responsev {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .orders__content-button {
+        width: 20rem;
+    }
+    .phone__app-one {
+        margin-right: 0;
+    }
+}

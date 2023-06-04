@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap");
+
+:root {
+  /* colors */
+  --color-primary: #09a66d;
+  --color-primary-light: #f3fbf8;
+  --color-secondry: #fed42d;
+  --color-background: #fff;
+  --color-white: #fff;
+  --color-black: #222;
+  --color-black-light: #555;
+  --color-grey: #ccc;
+  --color-selection-bg: rgb(59, 209, 39);
+  --color-selection-color: #fff;
+
+  /* fonts */
+  --font-primary: "Rosario", sans-serif;
+  --font-secondry: "DM Sans", sans-serif;
+}

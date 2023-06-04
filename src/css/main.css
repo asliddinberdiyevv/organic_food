@@ -1,0 +1,22 @@
+/* base */
+@import "./base/variables.css";
+@import "./base/base.css";
+@import "./base/animations.css";
+
+/* layouts */
+@import "./layouts/navigation.css";
+@import "./layouts/header.css";
+@import "./layouts/service.css";
+@import "./layouts/explor.css";
+@import "./layouts/about.css";
+@import "./layouts/orders.css";
+@import "./layouts/footer.css";
+
+/* components */
+@import "./components/icon.css";
+@import "./components/btn.css";
+@import "./components/menu.css";
+
+/* utils */
+@import "./utils/utilities.css";
+
